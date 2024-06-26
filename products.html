@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>FPO Home Page</title>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel = "stylesheet" href="static/styles/header_section.css">
+        <link rel="stylesheet" href="static/styles/content.css">
+        <link rel="stylesheet" href="static/styles/button.css">
+        <link rel="stylesheet" href="static/styles/logged_account.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython_stdlib.js"></script>
+    </head>
+    
+    <body style="padding-top: 100px;
+                 margin: 0px;">
+        
+        <div class="header_section">
+            <div class="left_section">FARMERS</div>
+            
+            <div class="middle_section">
+                <a href="{{url_for('home_page')}}">Home</a>
+                <a href="{{url_for('about_page')}}">About</a>
+                <a href="{{url_for('product_page')}}">Products</a>
+                <a href="{{url_for('faqs_page')}}">FAQs</a>
+            </div>
+            
+            <div class="right_section">
+                <img class = "image" src="static/images/user_account.png">
+                <a href="{{url_for('login_page')}}">Login</a>
+                <a href="{{url_for('register_page')}}">Register</a>
+            </div>        
+        </div>
+        
+        <div style="display: flex; flex-direction: column; justify-items: space-evenly; align-items: : center; background-color: aquamarine;">
+            <h1>Products</h1>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                
+                <div id="product_1" class="product_group">
+                <div><img src="static/images/farming tools/tractor.jpg"></div>
+                <div class="product_details">
+                    <h2>Tractor for rent</h2>
+                    <p>this is the info about the tractor.</p>
+                    <p>Owner Name: Clark Maxwell</p>
+                    <p>Phone No.: +91 1234567894</p>
+                </div>
+                </div>
+
+                <div id="product_2" class="product_group">
+                    <div><img src="static/images/farming tools/plough.jpg"></div>
+                    <div class="product_details">
+                        <h2>Plough for rent</h2>
+                        <p>this is the info about the plough.</p>
+                        <p>Owner Name: Clark Maxwell</p>
+                        <p>Phone No.: +91 1234567894</p>
+                    </div>
+                </div>
+
+                <div id="product_3" class="product_group">
+                    <div><img src="static/images/farming tools/shovel.jpg"></div>
+                    <div class="product_details">
+                        <h2>Shovel for rent</h2>
+                        <p>this is the info about the shovel.</p>
+                        <p>Owner Name: Clark Maxwell</p>
+                        <p>Phone No.: +91 1234567894</p>
+                    </div>
+                </div>
+
+                <div id="product_4" class="product_group">
+                    <div><img src="static/images/farming tools/rake.jpg"></div>
+                    <div class="product_details">
+                        <h2>Rake for rent</h2>
+                        <p>this is the info about the rake.</p>
+                        <p>Owner Name: Clark Maxwell</p>
+                        <p>Phone No.: +91 1234567894</p>
+                    </div>
+                </div>
+
+                <div id="product_5" class="product_group">
+                    <div><img src="static/images/farming tools/sickle.jpg"></div>
+                    <div class="product_details">
+                        <h2>Sickle for rent</h2>
+                        <p>this is the info about the sickle.</p>
+                        <p>Owner Name: Clark Maxwell</p>
+                        <p>Phone No.: +91 1234567894</p>
+                    </div>
+                </div>
+
+                <div id="product_6" class="product_group">
+                    <div><img src="static/images/farming tools/spade.jpg"></div>
+                    <div class="product_details">
+                        <h2>Spade for rent</h2>
+                        <p>this is the info about the spade.</p>
+                        <p>Owner Name: Clark Maxwell</p>
+                        <p>Phone No.: +91 1234567894</p>
+                    </div>
+                </div>
+
+                <div id="product_7" class="product_group">
+                    <div><img src="static/images/farming tools/wheelbarrow.jpg"></div>
+                    <div class="product_details">
+                        <h2>Wheelbarrow for rent</h2>
+                        <p>this is the info about the wheelbarrow.</p>
+                        <p>Owner Name: Clark Maxwell</p>
+                        <p>Phone No.: +91 1234567894</p>
+                    </div>
+                </div>
+
+                <div id="product_8" class="product_group">
+                    <div><img src="static/images/farming tools/cultivator.jpg"></div>
+                    <div class="product_details">
+                        <h2>Cultivator for rent</h2>
+                        <p>this is the info about the cultivator.</p>
+                        <p>Owner Name: Clark Maxwell</p>
+                        <p>Phone No.: +91 1234567894</p>
+                    </div>
+                    
+                </div>
+            
+            </div>
+            
+        </div>
+        
+    </body>
+</html>

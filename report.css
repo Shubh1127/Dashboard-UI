@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.button {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.header {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20220705/pngtree-a-rustic-farmers-hut-amidst-rice-fieldsa-shelter-for-farming-community-photo-image_32448736.jpg);
+    height: 15vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border-color: aqua;
+}
+.main{
+        background-image: url(https://t4.ftcdn.net/jpg/05/98/96/35/360_F_598963586_oXdCCEVXGbzzPqleH6WcQMZgTFIeShzx.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+.rps{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.boxs{
+    margin: 10px 20px;
+    max-width: calc(100% / 3 - 50px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    background: linear-gradient(-45deg,var(--gradient1)0%,var(--gradient2)100%);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.report_div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+:root {
+    --formBg: #111827;
+    --textclr: #9199a5;
+    --borderclr: #374151;
+    --btnBg: #a78bfa;
+    --gradient1: #e81cff;
+    --gradient2: #40c9ff;
+    --borderRadius: 5px;
+}
+.reports {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    margin: 10px 10px;
+    max-width: calc(50% / 3 - 20px);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    background: linear-gradient(-45deg,var(--gradient1)0%,var(--gradient2)100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+}

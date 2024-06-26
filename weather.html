@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------  CSS  --------------------->
+    <link rel="stylesheet" href="static/styles/weather.css">
+    <title>Weather</title>
+    <!---------------  IONICONS  --------------------->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+<body class="pps">
+    <div class="container">
+      <div class="search_box"> 
+        <input type="text" placeholder="Enter a city name" id="city" value="VARANASI" autocomplete="off"/>
+        <button id="search"><ion-icon class="icon" name="search"></ion-icon></button>
+      </div>
+      <div id="show"></div>
+    </div>
+   <!---------------  SCRIPT  --------------------->
+   <script src="static/weather.js"></script>  
+   
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get references to the input field and search button
+  var locationInput = document.getElementById('locationInput');
+  var searchButton = document.getElementById('searchButton');
+
+  // Event listener for when the search button is clicked
+  searchButton.addEventListener('click', function() {
+    var location = locationInput.value.trim(); // Trim any leading/trailing spaces
+    
+    // Check if the location input is not empty
+    if (location !== '') {
+      // You can perform further actions here, such as fetching weather data for the entered location
+      console.log('Searching for weather in:', location);
+    } else {
+      alert('Please enter a location.');
+    }
+  });
+});
+</script>
+</body>   
+</html>

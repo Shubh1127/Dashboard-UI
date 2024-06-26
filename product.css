@@ -1,0 +1,87 @@
+ /* Some basic styling */
+ :root {
+    --formBg: #111827;
+    --textclr: #9199a5;
+    --borderclr: #374151;
+    --btnBg: #a78bfa;
+    --gradient1: #e81cff;
+    --gradient2: #40c9ff;
+    --borderRadius: 5px;
+ }
+ body {
+    background: linear-gradient(-45deg,var(--gradient1)0%,var(--gradient2)100%);
+
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    
+}
+.container h1{
+    color: #374151;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color:whitesmoke;
+    box-sizing: border-box;
+    border-width: 4px;
+    border-radius: 9px;
+    border-color:black ;
+    border-style: outset;
+}
+
+.product {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.product:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.product img {
+    max-width: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.product-info {
+    overflow: hidden;
+}
+
+.product-info h2 {
+    margin-top: 0;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+}
+.hvr :hover{
+    font-size: 2rem;
+
+}
+
+.rent a button{
+    box-sizing: border-box;
+    border-width: 4px;
+    border-radius: 8px;
+    border-color: #a78bfa;
+}
