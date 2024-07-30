@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+
 :root{
     --color-primary: #7380ec;
+    --primary-color: #edf2fc;
+    --secondary—color: #212121;
     --color-danger: #ff7782;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
@@ -25,7 +28,20 @@
     --box-shadow:0 2rem 3rem var(--color-light);
 
 }
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+}
 
+
+.light{
+    border-radius: 50%;
+}
+.dark{
+    width: 25px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -46,10 +62,10 @@ body{
     height: 100vh;
     font-family: poppins,sans-serif;
     font-size: 0.88rem;
-    background: var(--color-background);
+    background: var(--primary-color);
     user-select: none;
     overflow-x: hidden;
-    color: var(--color-dark);
+    color: var(--secondary—color);
 }
 .container{
     display: grid;
@@ -97,26 +113,26 @@ small{
 }
 
 .text-muted{
-    color: var(--color-info-dark);
+    color: var(--secondary—color);
 } 
 
 p{
-    color: var(--color-dark-variant);
+    color: var(--secondary—color);
 }
 b{
-    color: var(--color-dark);
+    color: var(--secondary—color);
 }
 .primary{
-    color: var(--color-primary);
+    color: var(--secondary—color);
 }
 .danger{
-    color: var(--color-danger);
+    color: var(--secondary—color);
 }
 .success{
-    color: var(--color-success);
+    color: var(--secondary—color);
 }
 .warning{
-    color: var(--color-warning);
+    color: var(--secondary—color);
 }
 aside{
     height: 100vh;
@@ -160,7 +176,7 @@ aside h3{
 }
 aside .sidebar a{
     display: flex;
-    color: var(--color-info-dark);
+    color: var(--secondary—color);
     margin-left: 2rem;
     gap: 1rem;
     align-items: center;
@@ -181,8 +197,8 @@ aside .sidebar a span{
  }
 
  aside .sidebar a.active{
-   background: var(--color-light);
-   color: var(--color-primary);
+   background: var(--primary-color);
+   color: var(--secondary—color);
    margin-left: 0;
  }
 
@@ -190,23 +206,23 @@ aside .sidebar a span{
     content: ' ';
     width: 6px;
     height: 100%;
-    background: var(--color-primary);
+    background: var(--primary-color);
  }
  aside .sidebar a.active span{
-   color: var(--color-primary);
+   color: var(--secondary—color);
    margin-left: calc(1rem - 3px);
  }
 
  aside .sidebar a:hover{
-    color: var(--color-primary);
+    color: var(--secondary—color);
  }
  aside .sidebar a:hover span{
     margin-left: 1rem;
  }
 
 aside .sidebar .message-count{
-    background: var(--color-danger);
-    color: var(--color-white);
+    background: var(--primary-color);
+    color: var(--secondary—color);
     padding: 2px 10px;
     font-size: 11px;
     border-radius: var(--border-radius-1);
@@ -220,7 +236,7 @@ main{
 }
 main .date{
     display: inline-block;
-    background: var(--color-light);
+    background: var(--primary-color);
     border-radius: var(--border-radius-1);
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
@@ -228,7 +244,7 @@ main .date{
 }
 main .date input[type="date"]{
     background: transparent;
-    color: var(--color-dark);
+    color: var(--secondary—color);
 }
 main .insights{
     display: grid;
@@ -236,8 +252,9 @@ main .insights{
     gap:1.6rem;
 }
 main .insights > div {
-    background: var(--color-white);
+    background: var(--primary-color);
     padding: var(--card-padding);
+    border: 2px solid var(--secondary—color);
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
     box-shadow: var(--box-shadow);
@@ -249,14 +266,14 @@ main .insights >div:hover{
 
 }
 main .insights > div> span{
-    background: var(--color-primary);
+    background: var(--primary-color);
     padding: 0.5rem;
     border-radius: 50%;
-    color:var(--color-white);
+    color:var(--secondary—color);
     font-size:2rem;
 }
 main .insights > div.expenses span{
-    background: var(--color-danger);
+    background: var(--primary-color);
 }
 main .insights > div.income span{
     background: var(--color-success);
@@ -335,8 +352,9 @@ main .recent-orders h2{
 }
 
 main .recent-orders table{
-    background: var(--color-white);
+    background: var(--primary-color);
     width: 100%;
+    border:2px solid var(--secondary—color);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     text-align: center;
@@ -350,7 +368,7 @@ main .recent-orders table:hover{
 main table tbody td{
     height: 2.8rem;
     border-radius: 1px sloid var(--color-light);
-    color: var(--color-dark-variant);
+    color: var(--secondary—color);
 }
 main table tbody tr:last-child td{
     border:none;
@@ -360,7 +378,7 @@ main .recent-orders a{
     text-align: center;
     display: block;
     margin: 1rem auto;
-    color: var(--color-primary);
+    color: var(--secondary—color);
 }
 
 /*================= RIGHT ======================*/
@@ -379,23 +397,25 @@ main .recent-orders a{
     display: none;
 }
 .right .theme-toggler{
-    background:var(--color-light);
+    background:var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 1.6rem;
     width: 4.2rem;
     cursor: pointer;
+    gap: 5px;
     border-radius: var(--border-radius-1);
 }
 
-.right .theme-toggler span{
+.right .theme-toggler button{
     font-size:1.2rem;
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .right .theme-toggler span.active{
     background: var(--color-primary);
@@ -410,6 +430,8 @@ main .recent-orders a{
 }
 /*=========================== RECENT UPDATES =================*/
 .right .recent-updates{
+    background: var(--primary-color);
+    border: 2px solid var(--secondary—color);
     margin-top: 1rem;
 
 }
@@ -417,8 +439,8 @@ main .recent-orders a{
     margin-bottom: 0.8rem;
 }
 
-.roght .recent-updates .updates{
-    background: var(--color-white);
+.right .recent-updates .updates{
+    background: var(--primary-color);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
@@ -445,10 +467,10 @@ main .recent-orders a{
 }
 
 .right .sales-analytics .item{
-
+    border: 2px solid var(--secondary—color);
     margin-top: 15px;
     height: 80px;
-    background: var(--color-white);
+    background: var(--primary-color);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -474,19 +496,19 @@ main .recent-orders a{
 
 .right .sales-analytics .item .icon{
     padding: 0.6rem;
-    color: var(--color-white);
+    color: var(--secondary—color);
     border-radius: 50%;
     background: var(--color-primary);
     display: flex;
 }
 
 .right .sales-analytics .item.offline .icon{
-    background-color: var(--color-danger);
+    background-color: var(--primary-color);
 
 }
 
 .right .sales-analytics .item.customers .icon{
-    background: var(--color-success);
+    background: var(--primary-color);
 }
 
 .right .sales-analytics .add-product{
@@ -562,7 +584,7 @@ main .recent-orders a{
    aside{
     position: fixed;
     left: -100%;
-    background: var(--color-white);
+    background: var(--primary-color);
     width: 18rem;
     z-index: 3;
     box-shadow: 1rem 3rem 4rem var(--color-light);
@@ -621,7 +643,7 @@ main .recent-orders a{
     align-items: center;
     padding: 0 0.8rem;
     height: 4.6rem;
-    background: var(--color-white);
+    background: var(--primary-color);
     width: 100%;
     margin: 0;
     z-index: 2;
@@ -639,7 +661,7 @@ main .recent-orders a{
     display: inline-block;
     background: transparent;
     cursor: pointer;
-    color:var(--color-dark);
+    color:var(--secondary—color);
     position: absolute;
     left: 1rem;
    }
